@@ -1,4 +1,4 @@
-
+// tugas hari ini 
 
 const faktorial = (num) =>{
    
@@ -9,9 +9,11 @@ const faktorial = (num) =>{
     for (let i = num - 1; i >= 1; i--) {
       
       num *= i;
+      
     
     }
     return num; 
+    
   }
   
 
