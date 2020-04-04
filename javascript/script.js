@@ -18,12 +18,13 @@ const faktorial = (num) =>{
   
 
   const Rstring = (name) => {
-
+    
     let x ="";
 
     for (let i = name.length -1 ; i >= 0 ; i--){
         
         x += name[i];
+        
     }
     return x;
   }
@@ -74,4 +75,40 @@ const faktorial = (num) =>{
           console.log(`${x} X ${i} = ${hasil}`);
       }
      
+  }
+
+  const star =(x) =>{
+      
+       for (let i=0 ; i < x;i++){
+           str="";
+           for(let y=1;y < x -i ; y++){
+               str = str + " ";
+           }
+           for (let z=1; z <= (2*i+1); z++){
+            str = str + "*";
+           }
+           console.log(str);
+       }
+      
+      
+  }
+
+  const pyramid = (x) =>{
+      for (let i= 1; i <= x; i++){
+        s = "";
+        for(let j=0; j < i ; j++){
+            s = s + "*"
+        }
+        console.log(s)
+      }
+  }
+  
+  const pyramid3 = () => {
+    let draw = "";
+    
+    for(let i=1; i<=10; i++)
+    {
+     draw = draw + "*";
+     console.log(draw)
+    }
   }
